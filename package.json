@@ -1,0 +1,22 @@
+{
+  "name": "books-redis-cron",
+  "version": "1.0.0",
+  "description": "Books API w/ user authentication, Redis per-user caching, bulk insertion via cron job",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "cron": "node bulkCron.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "redis": "^4.6.13",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.4.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
